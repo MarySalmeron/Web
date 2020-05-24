@@ -1,6 +1,6 @@
 <?php
     include("connection.php");
-    $nivel=$_POST['p_nivel']; 
+    //$nivel=$_POST['tipo']; //p_nivel
 
     $sqlInfSubject = "SELECT * FROM subject";
     $resInfSubject = mysqli_query($connection, $sqlInfSubject);

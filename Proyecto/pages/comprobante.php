@@ -58,13 +58,13 @@
       </div>
 
       <li class="nav-item">
-        <a class="nav-link" href="materias.php">
+        <a class="nav-link" href="materiasAlumno.php">
           <i class="fas fa-book"></i>
           <span>Preinscribir</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="editar.php">
+        <a class="nav-link" href="editarAlumno.php">
           <i class="fas fa-user-edit"></i>
           <span>Modificar información</span></a>
       </li>

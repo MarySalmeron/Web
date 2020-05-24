@@ -1,0 +1,37 @@
+<div class="card-body">
+            <p>Boleta:<?php echo $infInfBoleta[0]; ?> </p>
+            <p>Nombre(s): <?php echo $infInfBoleta[1]; ?></p>
+            <p>Apellido paterno: <?php echo $infInfBoleta[2]; ?></p>
+            <p>Apellido materno: <?php echo $infInfBoleta[3]; ?></p>
+            <p>E-mail: <?php echo $infInfBoleta[4]; ?></p>
+            <p>Número de teléfono: <?php echo $infInfBoleta[5]; ?></p>
+            <p>Género: <?php echo $infInfBoleta[6]; ?></p>
+            <p>Fecha de nacimiento<?php echo $infInfBoleta[7]; ?></p>
+          </div>
+          <a class="btn btn-google btn-user btn-block">
+              Editar
+          </a>
+      </div>
+
+
+alumnoEditar_AX.php
+include("./../fix/configBD.php");
+        include("./../fix/getPosts.php");
+
+
+<!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>

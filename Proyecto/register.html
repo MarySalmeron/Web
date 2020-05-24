@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link href="proyecto/js/plugins/validetta/validetta.css" rel="stylesheet" type="text/css" media="screen" >-->
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="validetta/validetta.js"></script>
+  <title>Registro</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <!-- <script src="Proyecto/js/registroAlumno.php"></script> No lo reconoce-->
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-4 d-none d-lg-block">
+            <img src="img/escom.jpg" width="350" height="580">
+          </div>
+          <div class="col-lg-8">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">¡Crea una cuenta!</h1>
+              </div>
+              <form class="user">
+
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="number" class="form-control form-control-user" id="boleta" placeholder="Boleta"  data-validetta="required,number,minLength[8],maxLength[10]">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="FirstName" placeholder="First Name" required="First Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="MiddleName" placeholder="Middle Name" required="MiddleName">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="LastName" placeholder="Last Name" required="LastName">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="email" class="form-control form-control-user" id="InputEmail" placeholder="Email Address" required="InputEmail">
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="number" class="form-control form-control-user" id="InputPhone" placeholder="Phone" required="InputPhone">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <nav class="navbar navbar-expand navbar-light bg-light mb-3">
+                      <a class="navbar-brand" href="#">Género</a>
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <form>
+                              <select name="gender" required="gender">
+                                  <option value="">--Seleccione--</option>
+                                  <option value="1">Femenino</option>
+                                  <option value="2">Masculino</option>
+                                  <option value="3">Otro</option>
+                              </select>
+                            </form>
+                            
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="date" class="form-control form-control-user" id="b_date" placeholder="BirthDate dd/mm/yyyy" required="b_date">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" class="form-control form-control-user" id="InputPassword" placeholder="Password" required="InputPassword" equalTo="exampleRepeatPassword">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control form-control-user" id="RepeatPassword" placeholder="Repeat Password" required="RepeatPassword" equalTo="exampleInputPassword">
+                  </div>
+                </div>
+                  <input type="submit" class="btn blue" style="width:100%;" value="Registrar">
+              </form>
+              <br>
+              <div class="text-center">
+                <a class="small" href="forgot-password.html">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class="text-center">
+                <a class="small" href="login.php">¿Ya tienes una cuenta? Entra!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

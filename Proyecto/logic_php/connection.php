@@ -1,7 +1,7 @@
 <?php
     $host= "localhost";
     $user= "root";
-    $password= "root";
+    $password= "";
     $db= "preinscripcion";   
     
     $connection= mysqli_connect($host, $user, $password, $db, "3306");

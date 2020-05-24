@@ -33,19 +33,20 @@
             <!-- Nested Row within Card Body -->
             <div class="row">
             <div class="col-lg-6 d-none d-lg-block">
-              <img src="img/escom.jpg" width="425" height="550">
+              <img src="img/escom.jpg" width="450" height="580">
             </div>
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Preinscripción ESCOM</h1>
+                    <h1 class="h4 text-gray-900 mb-4">Administrador</h1>
                   </div>
                   <form action="logic_php/log.php" method="POST" class="user">
                     <div class="form-group">
-                      <input type="number" class="form-control form-control-user" id="boleta" name="boleta" maxlength="10" minlength="8" aria-describedby="emailHelp" placeholder="Número de boleta" required="boleta">
+                      <input type="text" class="form-control form-control-user" id="user" name="user" aria-describedby="emailHelp" placeholder="Usuario">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="pass" name="pass" placeholder="Contraseña" required="pass">
+                      <input type="password" class="form-control form-control-user" id="pass" name="pass" placeholder="Contraseña">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -55,7 +56,7 @@
                     </div>
                     <input type="submit" class="btn btn-primary btn-user btn-block" id="access">
                     <hr>
-                    <a href="register.html" class="btn btn-google btn-user btn-block">
+                    <a href="pages/register.php" class="btn btn-google btn-user btn-block">
                       Registrar
                     </a>
                   </form>
@@ -63,7 +64,7 @@
                   <div class="text-center">
                     <a class="small" href="forgot-password.html">¿Olvidaste tu contraseña?</a>
                     <br>
-                    <a class="small" href="loginAdmin.php">Entrar como administrador</a>
+                    <a class="small" href="login.php">Entrar como alumno</a>
                   </div>
                 </div>
               </div>

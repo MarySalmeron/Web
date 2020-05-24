@@ -65,7 +65,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="editar.php">
+        <a class="nav-link" href="editarAlumno.php">
           <i class="fas fa-user-edit"></i>
           <span>Modificar información</span></a>
       </li>
@@ -104,48 +104,50 @@
   </div>
 
 <!-- DataTales Example -->
-<div class="card shadow mb-4">
-  <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Unidades de aprendizaje</h6>
-  </div>
-  <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Nivel</th>
-            <th>Estado</th>
-            <th>Agregar</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <?php
-
-            while($row=mysqli_fetch_array($resInfSubject)){?>
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Unidades de aprendizaje</h6>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
               <tr>
-                <td><?php echo $row['nombre']?></td>
-                <td><?php echo $row['tipo']?></td>
-                <td>
-                <form method = "post" action = "ejemplo.php">
-                    <div>
-                        <input type = "radio" name = "preg1" value = "foo" >Ordinario</input>
-                        <input type = "radio" name = "preg1" value = "bar" >Recurse</input>
-                    </div>
-                </form>
-                </td>
-                <td>
-                  <a href="materias.php"><i class="far fa-plus-square fa-2x"></i></a>
-                </td>
+                <th>Nombre</th>
+                <th>Nivel</th>
+                <th>Estado</th>
+                <th>Agregar</th>
               </tr>
-          <?php } ?>
+            </thead>
+
+            <tbody>
+              <?php
+
+                while($row=mysqli_fetch_array($resInfSubject)){?>
             
-        </tbody>
-      </table>
+                  <tr>
+                    <td><?php echo $row['nombre']</td>?>
+                    <td><?php echo $row['tipo']</td>?>
+                    <td>
+                      <form method = "post" action = "ejemplo.php">
+                        <div>
+                          <input type = "radio" name = "preg1" value = "foo" >Ordinario</input>
+                          <input type = "radio" name = "preg1" value = "bar" >Recurse</input>
+                        </div>
+                      </form>
+                    </td>
+                
+                    <td>
+                      <a href="materias.php"><i class="far fa-plus-square fa-2x"></i></a>
+                    </td>
+                  </tr>
+                <?php } ?>
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 </div>
 
@@ -175,22 +177,7 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script type="text/javascript" src="../js/materias.js"></script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  
 
 </body>
 
