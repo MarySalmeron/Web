@@ -101,7 +101,7 @@
               <div class="card mb-4 py-3 border-left-primary">
                 <div class="card-body">
                 Generar PDF
-                <a class="nav-link" href="comprobante.php">
+                <a class="nav-link" href="alumnopdf.php">
                     <i class="fas fa-file-pdf fa-7x"></i>
                 </a>
                 </div>
